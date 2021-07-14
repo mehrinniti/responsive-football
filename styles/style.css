@@ -1,0 +1,321 @@
+
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* --------------
+    Header style 
+----------------- */
+body{
+    background-color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+header{
+    width: 100%;
+    background-color: #2D25A0;
+    margin-bottom: 70px;
+}
+.nav-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 102px;
+}
+.main-name{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 64px;
+    Width:485px;
+    Height:230px;
+    padding-bottom: 27px;
+}
+.button{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border: 0px solid #E02C6D;
+    text-decoration: none;
+}
+.banner-pic img{
+    width: 556px;
+    height: 438px;
+    margin-top: 50px;
+    margin-bottom: 86px;
+}
+.nav-side:hover .banner-pic{
+    transform: scale(1.2);
+    transition: transform .1s ease-in-out;
+}
+.fa-arrow-right{
+    padding-left: 8px;
+}
+/* ----------------
+        Main 
+------------------- */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 27px 30px;
+}
+
+.player{
+    width: 330px;
+    height: 474px;
+    border: 0px solid #FFFFFF;
+    background: #FFFFFF;  
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);  
+    /* padding: 15px 15px 33px 15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+}
+.player img{
+    width: 300px;
+    height: 256px; 
+    margin: 0px;   
+    padding-top: 15px;
+    padding-bottom: 16px;
+}
+.player-info{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.player-name{
+    color: #18191F;
+    font-weight: bold;
+    font-size: 28px;   
+    margin: 0px; 
+    padding-bottom: 10px;
+}
+.player-detail{
+    color: #6C6C6C;
+    font-weight: normal;
+    font-size: 16px;  
+    margin: 0px;   
+    padding-bottom: 33px;   
+}
+
+/* Latest News Style  */
+
+.news-container{
+    margin-bottom: 70px;
+}
+.top-name{
+    margin-top: 70px;
+    color: #18191F;
+    font-weight: bold;
+    font-size: 28px;
+}
+.player-news{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 27px 30px;
+}
+.news{
+    width: 330px;
+    height: 300px;
+    border: 0px solid #FFFFFF;
+    background: #FFFFFF;  
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+}
+.news-photo img{
+    width: 300px;
+    height: 104px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 13px;
+}
+
+.news-detail{
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 95%;
+}
+.news-detail.history-detail{
+    padding-bottom: 30px;
+}
+.date{
+    font-size: 15px;
+    font-weight: lighter;
+    color: #7e7e7e73;
+}
+.news-name{
+    color: #18191F;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: normal;
+}
+
+/* Games this season style  */
+
+.season-name{
+    margin-top: 50px;
+    color: #18191F;
+    font-weight: bold;
+    font-size: 28px;
+}
+.season-box{
+    width: 600px;
+    height: 500px;
+    border: 0px solid #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    overflow: scroll;
+    overflow-x: hidden;
+    text-align: center;
+}
+.day{
+    color: #6C6C6C;
+}
+.schedule{
+    color: darkgray;
+}
+
+/*      Footer        */
+
+.ending-part{
+    width: 483.87px;
+    height: 213px;
+    border: 0px solid #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 158px;
+    margin-bottom: 45px;
+}
+.logo img{
+    width: 483.87px;
+    height: 110px;   
+    margin: 0px; 
+}
+.icon{
+    color: #969BAB;
+    margin-right: 23px;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+.copyright{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    margin: 0px;
+}
+
+/* --------------------
+    Media queries
+----------------------- */
+
+/* mobile device */
+
+@media only screen and (max-width: 720px) {
+    container{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-side{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .main-name{
+        font-weight: bold;
+        font-size: 36px;
+        font-style: normal;
+        Width:278px;
+        Height:138px;
+    }
+    .nav-side .banner-pic img{
+        width: 329px;
+        height: 259.17px;
+        margin: 50px 16px 62px 15px;
+    }
+    .nav-side:hover .banner-pic{
+        transform: scale(1.2);
+        transition: transform .1s ease-in-out;
+    }
+    /* header{
+        width: 100%;
+        background-color: #2D25A0;
+        margin: 0px;
+        margin-bottom: 70px;
+    }
+    .nav-side{
+        /* flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        flex-wrap: wrap;
+        margin-right: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-name{
+        font-weight: bold;
+        font-size: 36px;
+        font-style: normal;
+        Width:278px;
+        Height:138px;
+    }
+    .banner-pic{
+        width: 329px;
+        height: 259.17px;
+        margin: 0px;
+    } */
+    .players, .player-news{
+        grid-template-columns: repeat(1, 1fr);
+    }
+     main, .player, .news{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .top-name, .season-name{
+        text-align: center;
+    }
+    .season-box{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 380px;
+        margin-bottom: -43px;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .logo img{
+        width: 275px;
+    }
+    .share, .copyright{
+        margin-left: 50px;
+    }
+    .copyright{
+        margin-bottom: 124px;
+    } 
+    
+}

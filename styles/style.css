@@ -255,34 +255,7 @@ main{
         transform: scale(1.2);
         transition: transform .1s ease-in-out;
     }
-    /* header{
-        width: 100%;
-        background-color: #2D25A0;
-        margin: 0px;
-        margin-bottom: 70px;
-    }
-    .nav-side{
-        /* flex-direction: column;
-        justify-content: center;
-        align-items: center; 
-        flex-wrap: wrap;
-        margin-right: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .main-name{
-        font-weight: bold;
-        font-size: 36px;
-        font-style: normal;
-        Width:278px;
-        Height:138px;
-    }
-    .banner-pic{
-        width: 329px;
-        height: 259.17px;
-        margin: 0px;
-    } */
+    
     .players, .player-news{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -299,7 +272,7 @@ main{
     .season-box{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        width: 380px;
+        width: 330px;
         margin-bottom: -43px;
     }
     footer{
